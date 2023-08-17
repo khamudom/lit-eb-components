@@ -1,0 +1,1 @@
+{"version":3,"file":"eb-attribution.d.ts","sourceRoot":"","sources":["../src/components/eb-attribution.ts"],"names":[],"mappings":"AAAA,OAAO,EAAY,UAAU,EAAC,MAAM,aAAa,CAAC;AAGlD,qBACa,WAAY,SAAQ,UAAU;IACzC,OAAgB,MAAM,kCAMpB;IAEO,MAAM;CAGhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,gBAAgB,EAAE,WAAW,CAAC;KAC/B;CACF"}

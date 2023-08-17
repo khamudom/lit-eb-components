@@ -1,0 +1,1 @@
+{"version":3,"file":"card-contentold.d.ts","sourceRoot":"","sources":["../src/components/card-contentold.ts"],"names":[],"mappings":"AAAA,OAAO,EAAY,UAAU,EAAC,MAAM,KAAK,CAAC;AAE1C,OAAO,kBAAkB,CAAC;AAE1B,qBACa,WAAY,SAAQ,UAAU;IACzC,OAAgB,MAAM,0BAepB;IAEiC,KAAK,SAAM;IACpB,WAAW,SAAM;IAElC,MAAM;CAOhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,mBAAmB,EAAE,WAAW,CAAC;KAClC;CACF"}
