@@ -1,1 +1,0 @@
-{"version":3,"file":"eb-article-card.d.ts","sourceRoot":"","sources":["../src/components/eb-article-card.ts"],"names":[],"mappings":"AAAA,OAAO,EAAY,UAAU,EAAC,MAAM,KAAK,CAAC;AAE1C,OAAO,qBAAqB,CAAC;AAE7B,qBACa,WAAY,SAAQ,UAAU;IACzC,OAAgB,MAAM,0BAapB;IAEiC,KAAK,SAAM;IACpB,WAAW,SAAM;IAElC,MAAM;CAOhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,iBAAiB,EAAE,WAAW,CAAC;KAChC;CACF"}
