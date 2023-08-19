@@ -39,15 +39,8 @@ export class Card extends LitElement {
   size: CardSize = CardSize._1x_2y;
 
   override render() {
-    return html` <div><slot></slot></div> `;
+    return html` <slot size="${this.size}"></slot> `;
   }
-
-  // override updated(changedProperties: PropertyValues) {
-  //   super.updated(changedProperties);
-  //   if (changedProperties.has('size')) {
-  //     // Handle size changes here if needed
-  //   }
-  // }
 }
 
 declare global {
