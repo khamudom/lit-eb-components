@@ -18,6 +18,11 @@
         justify-content: center;
         column-gap: 12px;
       }
+      .half-cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+      }
     </style>
   </head>
   <body>
@@ -70,29 +75,54 @@
           <eb-social-bar slot="action-start"></eb-social-bar>
         </eb-card-content>
       </eb-card>
-      <eb-card size="_1x_1y">
-        <eb-card-content>
-          <img
-            slot="media"
-            src="https://th.bing.com/th?id=ORMS.8335759cdcf9c415e3daba9b3791c744&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=2&p=0"
-            alt="article image"
-          />
-          <eb-attribution slot="attribution">
+      <div class="half-cards">
+        <eb-card size="_1x_1y">
+          <eb-card-content>
             <img
-              slot="image"
-              src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AALER5n?w=16&h=16&q=100&m=6&f=png&u=t"
-              alt="provider image"
+              slot="media"
+              src="https://th.bing.com/th?id=ORMS.8335759cdcf9c415e3daba9b3791c744&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=2&p=0"
+              alt="article image"
             />
-            <span>The Spun</span>
-            <span> · </span>
-            <span>1d</span>
-          </eb-attribution>
-          <span class="card-title"
-            >Olga Carmona’s rocket sends Spain to the Women’s World Cup
-            Final</span
-          >
-        </eb-card-content>
-      </eb-card>
+            <eb-attribution slot="attribution">
+              <img
+                slot="image"
+                src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AALER5n?w=16&h=16&q=100&m=6&f=png&u=t"
+                alt="provider image"
+              />
+              <span>The Spun</span>
+              <span> · </span>
+              <span>1d</span>
+            </eb-attribution>
+            <span class="card-title"
+              >Olga Carmona’s rocket sends Spain to the Women’s World Cup
+              Final</span
+            >
+          </eb-card-content>
+        </eb-card>
+        <eb-card size="_1x_1y">
+          <eb-card-content>
+            <img
+              slot="media"
+              src="https://th.bing.com/th?id=ORMS.8335759cdcf9c415e3daba9b3791c744&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=2&p=0"
+              alt="article image"
+            />
+            <eb-attribution slot="attribution">
+              <img
+                slot="image"
+                src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AALER5n?w=16&h=16&q=100&m=6&f=png&u=t"
+                alt="provider image"
+              />
+              <span>The Spun</span>
+              <span> · </span>
+              <span>1d</span>
+            </eb-attribution>
+            <span class="card-title"
+              >Olga Carmona’s rocket sends Spain to the Women’s World Cup
+              Final</span
+            >
+          </eb-card-content>
+        </eb-card>
+      </div>
     </div>
   </body>
 </html>

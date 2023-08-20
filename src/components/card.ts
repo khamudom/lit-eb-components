@@ -1,5 +1,5 @@
 // import {PropertyValues} from 'lit';
-import {css, html, LitElement} from 'lit-element';
+import {css, html, LitElement} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
 export enum CardSize {
@@ -23,7 +23,7 @@ export class Card extends LitElement {
     }
     :host([size='_1x_1y']) {
       width: 300px;
-      height: 140px;
+      height: 146px;
     }
     :host([size='_1x_2y']) {
       width: 300px;

@@ -19,9 +19,13 @@ export class Button extends LitElement {
     }
     button,
     a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: transparent;
       border: 1px solid transparent;
       border-radius: 4px;
+      padding: 0;
     }
     button:hover,
     a:hover,
