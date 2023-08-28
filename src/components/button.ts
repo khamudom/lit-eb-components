@@ -25,12 +25,12 @@ export class Button extends LitElement {
       background: transparent;
       border: 1px solid transparent;
       border-radius: 4px;
-      padding: 0;
+      padding: 4px 8px;
     }
     button:hover,
     a:hover,
     a:visited {
-      background: #f5f5f5;
+      background: #f2f2f2;
       cursor: pointer;
     }
   `;

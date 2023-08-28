@@ -10,8 +10,13 @@
     <script type="module" src="../components/card.js"></script>
     <script type="module" src="../components/attribution.js"></script>
     <script type="module" src="../components/social-bar.js"></script>
+    <script type="module" src="../components/dynamic-color.js"></script>
     <link rel="stylesheet" href="style.css" />
     <style>
+      :root {
+        --background-color: #ffffff;
+        --foreground-color: #000000;
+      }
       .layout {
         display: flex;
         align-items: flex-start;
@@ -23,11 +28,15 @@
         flex-direction: column;
         row-gap: 12px;
       }
+      p {
+        margin: 0;
+      }
     </style>
   </head>
+
   <body>
     <div class="layout">
-      <eb-card size="_1x_2y">
+      <eb-card size="_1x_2y" backgroundColor="#0aff0e">
         <eb-card-content>
           <img
             slot="media"
@@ -51,7 +60,7 @@
           <eb-social-bar slot="action-start"></eb-social-bar>
         </eb-card-content>
       </eb-card>
-      <eb-card size="_2x_2y">
+      <eb-card size="_2x_2y" backgroundColor="#333333">
         <eb-card-content immersive>
           <img
             slot="media"
@@ -72,12 +81,13 @@
             >Olga Carmona’s rocket sends Spain to the Women’s World Cup
             Final</span
           >
+          <p slot="abstract">this is an abstract for this card</p>
           <eb-social-bar slot="action-start"></eb-social-bar>
         </eb-card-content>
       </eb-card>
       <div class="half-cards">
         <eb-card size="_1x_1y">
-          <eb-card-content>
+          <eb-card-content half>
             <img
               slot="media"
               src="https://th.bing.com/th?id=ORMS.8335759cdcf9c415e3daba9b3791c744&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=2&p=0"
@@ -97,10 +107,11 @@
               >Olga Carmona’s rocket sends Spain to the Women’s World Cup
               Final</span
             >
+            <eb-social-bar slot="action-start"></eb-social-bar>
           </eb-card-content>
         </eb-card>
         <eb-card size="_1x_1y">
-          <eb-card-content>
+          <eb-card-content half>
             <img
               slot="media"
               src="https://th.bing.com/th?id=ORMS.8335759cdcf9c415e3daba9b3791c744&pid=Wdp&w=300&h=156&qlt=90&c=1&rs=1&dpr=2&p=0"
@@ -120,6 +131,12 @@
               >Olga Carmona’s rocket sends Spain to the Women’s World Cup
               Final</span
             >
+            <p slot="abstract">this is an abstract for this card</p>
+            <eb-social-bar
+              slot="action-start"
+              likeCount="20"
+              dislikeCount="3"
+            ></eb-social-bar>
           </eb-card-content>
         </eb-card>
       </div>

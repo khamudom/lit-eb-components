@@ -7,7 +7,6 @@ export class SocialBar extends LitElement {
   static override styles = css`
     :host {
       display: block;
-      color: inherit;
     }
     .container {
       position: relative;
@@ -19,7 +18,6 @@ export class SocialBar extends LitElement {
     .btn-container {
       display: inline-flex;
       align-items: center;
-      padding: 4px 8px;
     }
     .count {
       display: none;
@@ -29,11 +27,13 @@ export class SocialBar extends LitElement {
     .count.active {
       display: inline-block;
     }
+    svg path {
+    }
   `;
 
-  @property({type: Number}) likeCount = 20;
+  @property({type: Number}) likeCount = 0;
 
-  @property({type: Number}) dislikeCount = 10;
+  @property({type: Number}) dislikeCount = 0;
 
   @property({type: Boolean}) isLikeSelected = false;
 
@@ -71,7 +71,11 @@ export class SocialBar extends LitElement {
 
   override render() {
     return html`
-      <div class="container">
+      <div
+        class="container"
+        likeCount=${this.likeCount}
+        dislikeCount=${this.dislikeCount}
+      >
         <div class="btn-container">
           <eb-button @click=${this.handleLikeClick}>
             ${this.isLikeSelected
@@ -99,10 +103,10 @@ export class SocialBar extends LitElement {
                     fill="currentcolor"
                   />
                 </svg> `}
+            <span class="count ${this.likeCount > 0 ? 'active' : ''}">
+              ${this.likeCount}
+            </span>
           </eb-button>
-          <span class="count ${this.likeCount > 0 ? 'active' : ''}"
-            >${this.likeCount}</span
-          >
         </div>
         <div class="btn-container">
           <eb-button @click=${this.handleDislikeClick}>
@@ -131,10 +135,10 @@ export class SocialBar extends LitElement {
                     fill="currentcolor"
                   />
                 </svg> `}
+            <span class="count ${this.dislikeCount > 0 ? 'active' : ''}">
+              ${this.dislikeCount}
+            </span>
           </eb-button>
-          <span class="count ${this.dislikeCount > 0 ? 'active' : ''}"
-            >${this.dislikeCount}</span
-          >
         </div>
         <div class="btn-container">
           <eb-button href="#" target="blank">
