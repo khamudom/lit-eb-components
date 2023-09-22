@@ -14,3 +14,8 @@ components/*.d.ts
 components/*.d.ts.map
 components/*.js
 components/*.js.map
+
+sandbox/*.d.ts
+sandbox/*.d.ts.map
+sandbox/*.js
+sandbox/*.js.map
